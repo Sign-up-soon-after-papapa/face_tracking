@@ -110,3 +110,4 @@ tmp/
 # config
 secret.py
 .vercel
+.vscode/settings.json
