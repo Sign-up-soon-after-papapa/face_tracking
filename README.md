@@ -1,5 +1,26 @@
 # Face Tracking
 
+### 项目简介
+
+本项目想完成一套 n:n 的人脸检索系统的简易框架，结合相关硬件进行边缘计算的探索，为抗击疫情提供一个人员追踪的
+
+我们使用到的硬件有 [Jetson TX2](https://developer.nvidia.com/embedded/jetson-tx2) 以及 [树莓派4B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) + [Intel 神经计算棒第二代（NCS2）](https://ark.intel.com/content/www/us/en/ark/products/140109/intel-neural-compute-stick-2.html)
+
+
+
+整体的硬件平台我们分为两种方案
+
+1、树莓派+NCS2 实现边缘
+
+2、利用Jetson TX2 的板载摄像头
+
+
+
+借鉴的开源项目
+
+- https://github.com/ageitgey/face_recognition
+- https://github.com/deepinsight/insightface
+
 ###  开发记录
 
 - 2020/11/28 23:17:12 Jetson TX2 在配环境的路上不堪重负，失去了他的全部空间
