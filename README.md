@@ -14,6 +14,10 @@
 
 2、利用Jetson TX2 的板载摄像头
 
+![](https://muyun-blog-pic.oss-cn-shanghai.aliyuncs.com/picgo/p1.jpg)
+
+![](https://muyun-blog-pic.oss-cn-shanghai.aliyuncs.com/picgo/p2.jpg)
+
 
 
 借鉴的开源项目
