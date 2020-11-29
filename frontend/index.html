@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>Pa_Face</title>
+
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <link rel="stylesheet" href="css/demo.css"/>
+    <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=AMap的key&plugin=AMap.Driving"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="js/demo.js"></script>
+    
+</head>
+<body>
+<div id="show_path_now">
+    
+</div>
+<div id="show_path_all">
+    
+</div>
+<div id="search">
+    <input type="text" id="seluser">
+<a class="push_button blue" onclick="showSearch();">Search</a>
+</div>
+
+<div id="container"></div>
+<div id="panel"></div>
+
+
+<input type="hidden" id="pointpaths">
+
+
+
+
+<script type="text/javascript">
+
+    //基本地图加载
+    var map = new AMap.Map("container", {
+        resizeEnable: true,
+        center: [118.787953,31.939608],//地图中心点
+        zoom: 13 //地图显示的缩放级别
+    });
+    //构造路线导航类
+    var driving = new AMap.Driving({
+        map: map,
+        panel: "panel"
+    }); 
+</script>
+
+</body>
+</html>
